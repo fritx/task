@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Task</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.min.css">
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="//underscorejs.org/underscore-min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<div id="todo-list" class="task-list" data-status="todo">
+  <h2>Todo</h2>
+  <ul></ul>
+</div>
+ 
+<div id="doing-list" class="task-list" data-status="doing">
+  <h2>Doing</h2>
+  <ul></ul>
+</div>
+
+<div id="done-list" class="task-list" data-status="done">
+  <h2>Done</h2>
+  <ul></ul>
+</div>
+
+<div class="op-panel">
+  <h2 id="add-btn" class="op-btn">Add</h2>
+</div>
+
+
+<div id="add-dialog" class="dialog" title="Add task">
+  <form>
+    <fieldset>
+      <label for="status">Status</label>
+      <select name="status">
+        <option value="todo">Todo</option>
+        <option value="doing">Doing</option>
+        <option value="done">Done</option>
+      </select>
+      <label for="tags">Tags</label>
+      <input type="text" name="tags" class="text ui-widget-content ui-corner-all">
+      <label for="title">Title</label>
+      <textarea rows="3" name="title" class="text ui-widget-content ui-corner-all"></textarea>
+    </fieldset>
+  </form>
+</div>
+
+<div id="update-dialog" class="dialog" title="Update task">
+  <form>
+    <fieldset>
+      <input type="hidden" name="id">
+      <label for="status">Status</label>
+      <select name="status">
+        <option value="todo">Todo</option>
+        <option value="doing">Doing</option>
+        <option value="done">Done</option>
+      </select>
+      <label for="tags">Tags</label>
+      <input type="text" name="tags" class="text ui-widget-content ui-corner-all">
+      <label for="title">Title</label>
+      <textarea rows="3" name="title" class="text ui-widget-content ui-corner-all"></textarea>
+    </fieldset>
+  </form>
+</div>
+
+
+</body>
+</html>

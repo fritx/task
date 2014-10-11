@@ -1,0 +1,48 @@
+.task-list {
+  float: left;
+}
+.task-list ul {
+  border: 1px solid #eee;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  margin-right: 10px;
+  cursor: move;
+  width: 342px;
+}
+.task-list li {
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 320px;
+  min-height: 60px;
+}
+
+.op-panel {
+  float: right;
+}
+.op-btn {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+label, input[type="text"], select, textarea {
+  display: block;
+}
+label {
+  margin-top: 12px;
+}
+input[type="text"], select, textarea {
+  margin-top: 6px;
+}
+input[type="text"], textarea {
+  width: 90%;
+}
+textarea {
+  resize: none;
+}
